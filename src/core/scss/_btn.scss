@@ -1,0 +1,31 @@
+.btn {
+    height: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px;
+    // background-color: var(--primary-color);
+    background-image: linear-gradient(to right, #8e2de2 0%, #4a00e0 51%, #8e2de2 100%);
+    transition: 0.5s;
+    border-radius: 10px;
+    background-size: 200% auto;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+        background-position: right center;
+    }
+}
+.text-btn {
+    height: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px;
+}

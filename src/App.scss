@@ -1,0 +1,44 @@
+.layout-wrapper {
+    .drawer-content {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+
+        .content-wrapper {
+            flex: 1;
+            overflow: auto;
+        }
+
+        .drawer-content {
+            display: block;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        height: 10px;
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+
+        // border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+        // border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--primary-color);
+    }
+}

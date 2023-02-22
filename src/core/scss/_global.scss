@@ -1,0 +1,61 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Changa:wght@700&display=swap');
+:root {
+    --background-color: #212121;
+    --text-color-default: #fff;
+
+    --primary-color: #9900f0;
+    --second-color: #f85aca;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem !important;
+    line-height: 1.5 !important;
+    text-rendering: optimizeSpeed;
+    color: var(--text-color-default);
+    background: var(--background-color) !important;
+    margin: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color-default);
+}
+
+// hidden arrows for input elements
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
